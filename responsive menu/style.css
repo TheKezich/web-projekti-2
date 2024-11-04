@@ -4,7 +4,7 @@
     padding: 10px 20px;
 }
 
-.header-nav ul {
+.header-nav-ul {
     list-style: none;
     display: flex ;
     gap: 10px ;
@@ -50,17 +50,30 @@
  display: block;
 }
 
-.header-nav ul {
+.header-nav-ul {
     flex-direction: column;
-    padding-inline-start: 0;
+    padding-inline-start: 0px;
     align-items: center;
     /* order: 2; */
+    position: fixed;
+    top: 90px;
+    right: -100% ;
+    width: 100vw;
+    height: 100vh;
+    transition: right 0.3s ease-in;
 }
+
+.header-nav-visible {
+    right: 0px;
+}
+
+
 
 .menu-and-icon-div {
     flex-direction: column-reverse;
-    background-color: green;
     align-items: center;
+    position: relative;
+    gap: 50px ;
     
 }
 }

@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 <body>
    <nav class="header-nav">
     <img class="logo-img" src="images/adidas-logo.png" alt="" class="logo-img">
     <div class="menu-and-icon-div">
-        <ul >
+        <ul id="main-menu" class="header-nav-ul">
             <li>
-                <a href="#">shop</a>
+                <a href="https://www.adidas.de/en/winter">shop</a>
             </li>
             <li>
-                <a href="#">blog</a>
+                <a href="https://www.adidas.co.uk/blog">blog</a>
             </li>
             <li>
-                <a href="#">cart</a>
+                <a href="https://www.adidas.co.uk/cart">cart</a>
             </li>
             <li>
-                <a href="#">about us</a>
+                <a href="https://www.adidas.com/us/go/campaign/impact">about us</a>
             </li>
     
         </ul>
-        <button class="menu-btn">
+        <button onclick="toggleMenuVisibility()" class="menu-btn">
             <img src="images/hamburger-icon.png" alt="" class="menu-img">
         </button>
     </div>
