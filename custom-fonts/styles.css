@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "SourGummy";
+    src: url(fonts/SourGummy-Regular.woff2);
+}
+
+@font-face {
+    font-family: "SourGummy";
+    src: url(fonts/SourGummy-Bold.ttf);
+}
+
+
+
+.test-p {
+    font-family: "SourGummy";
+    font-weight: 800;
+    font-size: 190px;
+    margin-left: 150px;
+}
