@@ -1,8 +1,89 @@
-/* važno */
+
 * {
-    box-sizing: border-box
-  }
-  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header {
+    width: 100%;
+    background: #333;
+    padding: 15px 20px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* NAVIGACIJA */
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* HAMBURGER */
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: #333;
+        padding: 10px 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
 
 .section-div {
     display: flex;
@@ -12,9 +93,11 @@
 .section-column {
     width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    text-align: center;
 }
 
 .section-image {
@@ -22,6 +105,26 @@
     height: 500px;
     object-fit: cover;
     border-radius: 16px;
+}
+
+.section-text {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.section-button:hover {
+    background-color: #0056b3;
 }
 
 .row-reverse-section-div {

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMAT</title>
+</head>
+
+<body>
+    <script>
+        const product1 = {
+            name: "phone",
+            price: 99,
+            stock: 9
+        };
+        const product2 = {
+            name: "sigma",
+            price: 99,
+            stock: 9
+        };
+        const product3 = {
+            name: "gigma",
+            price: 99,
+            stock: 9
+        };
+
+        function sumProductPrice(p1, p2, p3) {
+            const sum = p1.price + p2.price + p3.price
+            const average = sum / 3
+            console.log (`Products sum is: ${sum} and average price is ${average}.`)
+        }
+
+        sumProductPrice(product1, product2,product3)
+
+
+
+    </script>
+</body>
+
+</html>
